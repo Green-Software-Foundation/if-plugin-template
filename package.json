@@ -1,0 +1,36 @@
+{
+  "name": "if-model-template",
+  "description": "Impact Framework models template.",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": {
+    "name": "Green Software Foundation",
+    "email": "info@gsf.com"
+  },
+  "dependencies": {
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "@babel/core": "7.22.10",
+    "@babel/preset-typescript": "^7.22.5",
+    "@jest/globals": "^29.6.1",
+    "@types/node": "^20.4.5",
+    "gts": "^5.0.0"
+  },
+  "engines": {
+    "node": "18",
+    "yarn": "1.22.19",
+    "npm": "8.19.2"
+  },
+  "keywords": [],
+  "main": "build/index.js",
+  "repository": {
+    "url": "https://github.com/Green-Software-Foundation/if-model-template.git"
+  },
+  "scripts": {
+    "fix": "gts fix",
+    "lint": "gts lint",
+    "prepare": "npm run build",
+    "build": "tsc"
+  }
+}
