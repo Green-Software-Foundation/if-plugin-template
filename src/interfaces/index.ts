@@ -1,10 +1,14 @@
 /**
  * Base interface for models.
  */
-export interface IImpactModelInterface {
-  configure(params: object | undefined): Promise<IImpactModelInterface>;
+export interface ModelPluginInterface {
+  /**
+   * Configures instance with given params.
+   */
+  configure(params: object | undefined): Promise<ModelPluginInterface>;
 
-  authenticate(authParams: object): void;
-
-  execute(observations: object | object[] | undefined): Promise<any[]>;
+  /**
+   * Calculates `output` based on given model's `input`.
+   */
+  execute(observations: object[]): Promise<any[]>;
 }
