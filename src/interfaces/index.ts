@@ -1,3 +1,5 @@
+import {ModelParams} from '../types/model-plugin';
+
 /**
  * Base interface for models.
  */
@@ -10,5 +12,5 @@ export interface ModelPluginInterface {
   /**
    * Calculates `output` based on given model's `input`.
    */
-  execute(observations: object[]): Promise<any[]>;
+  execute(inputs: ModelParams[]): Promise<ModelParams[]>;
 }
