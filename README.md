@@ -8,13 +8,13 @@ Here can be implementation details of the model. For example which API is used, 
 
 ## Usage
 
-To run the `<MODEL_HERE>` model an instance of `IOutputModelInterface` must be created and its `configure()` method called. Then, the model's `execute()` method can be called, passing required arguments to it.
+To run the `<MODEL_HERE>`, model an instance of `ModelPluginInterface` must be created and its `configure()` method called. Then, the model's `execute()` method can be called, passing required arguments to it.
 
 This is how you could run the model in Typescript:
 
 ```typescript
 async function runModel() {
-  const newModel = await new Model().configure('test', params);
+  const newModel = await new Model().configure(params);
   const usage = await newModel.calculate([
     {
       timestamp: '2021-01-01T00:00:00Z',
