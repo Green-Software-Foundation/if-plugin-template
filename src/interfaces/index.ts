@@ -2,10 +2,7 @@
  * Base interface for models.
  */
 export interface IImpactModelInterface {
-  configure(
-    name: string,
-    staticParams: object | undefined
-  ): Promise<IImpactModelInterface>;
+  configure(params: object | undefined): Promise<IImpactModelInterface>;
 
   authenticate(authParams: object): void;
 
