@@ -1,5 +1,7 @@
 import {ModelPluginInterface} from './interfaces';
 
+import {InputParams} from './types/model-plugin';
+
 export class YourModel implements ModelPluginInterface {
   staticParams: object | undefined = undefined;
 
@@ -17,7 +19,7 @@ export class YourModel implements ModelPluginInterface {
   /**
    * Calculates `output` based on given model's `input`.
    */
-  public async execute(inputs: any[]): Promise<any[]> {
-    return Promise.resolve([]); // Replace with preffered logic.
+  public async execute(inputs: InputParams[]): Promise<any[]> {
+    return Promise.resolve(inputs); // Replace with preffered logic.
   }
 }
