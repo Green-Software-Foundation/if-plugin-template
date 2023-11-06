@@ -1,24 +1,15 @@
-import {IImpactModelInterface} from './interfaces';
+import {ModelPluginInterface} from './interfaces';
 
-export class YourModel implements IImpactModelInterface {
-  name: string | undefined;
-  sharedParams: object | undefined = undefined;
-
-  protected authCredentials: object | undefined;
+export class YourModel implements ModelPluginInterface {
+  staticParams: object | undefined = undefined;
 
   /**
-   * Authentication credentials if needed.
+   * Configures instance with given params.
    */
-  public async authenticate(authParams: object) {
-    this.authCredentials = authParams;
-  }
-
   public async configure(
-    name: string,
     staticParams: object | undefined = undefined
-  ): Promise<IImpactModelInterface> {
-    this.name = name;
-    this.sharedParams = staticParams;
+  ): Promise<ModelPluginInterface> {
+    this.staticParams = staticParams;
 
     return this;
   }
@@ -27,6 +18,6 @@ export class YourModel implements IImpactModelInterface {
    * Calculates `output` based on given model's `input`.
    */
   public async execute(inputs: any[]): Promise<any[]> {
-    return Promise.resolve([]);
+    return Promise.resolve([]); // Replace with preffered logic.
   }
 }
