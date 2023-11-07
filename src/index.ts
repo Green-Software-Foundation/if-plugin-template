@@ -19,7 +19,7 @@ export class YourModel implements ModelPluginInterface {
   /**
    * Calculates `output` based on given model's `input`.
    */
-  public async execute(inputs: ModelParams[]): Promise<any[]> {
+  public async execute(inputs: ModelParams[]): Promise<ModelParams[]> {
     return Promise.resolve(inputs); // Replace with preffered logic.
   }
 }
