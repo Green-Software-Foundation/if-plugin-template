@@ -59,7 +59,7 @@ initialize:
 ...
 ```
 
-### Using directly from github
+### Using directly from Github
 
 You can simply push your model to the public Github repository and pass the path to it in your impl.
 For example, for a model saved in `github.com/my-repo/my-model` you can do the following:
