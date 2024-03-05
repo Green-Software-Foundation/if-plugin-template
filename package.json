@@ -1,6 +1,6 @@
 {
   "name": "if-model-template",
-  "description": "Impact Framework models template.",
+  "description": "Impact Framework plugins template.",
   "version": "v0.0.1",
   "license": "MIT",
   "author": {
@@ -31,9 +31,7 @@
   "scripts": {
     "build": "rm -rf build && tsc --project tsconfig.build.json",
     "coverage": "jest --verbose --coverage",
-    "fix": "gts fix",     
-    "lint": "gts lint",
-    "prepublish": "yarn build",
-    "test": "jest --verbose"
+    "fix": "gts fix",
+    "lint": "gts lint"
   }
 }
