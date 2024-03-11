@@ -32,7 +32,7 @@
   },
   "include": [
     "*.ts"
-  ],
+, "src/lib/my-custom-plugin/index.ts"  ],
   "exclude": [
     "node_modules",
     ".types-compat"
