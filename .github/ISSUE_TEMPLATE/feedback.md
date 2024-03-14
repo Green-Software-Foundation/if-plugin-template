@@ -1,6 +1,6 @@
 ---
 name: Feedback
-about: Submiting feedback on the IEF implementation
+about: Submiting feedback on plugin template
 title: "Feedback - "
 labels: feedback
 assignees: ''
@@ -12,8 +12,6 @@ What does your feedback relate to?
 
 - [] Project aims/objectives
 - [] Repository structure 
-- [] Model plugin
-- [] Rimpl code 
 - [] Documentation
 - [] Tests
 - [] Other
