@@ -1,18 +1,16 @@
 {
   "compilerOptions": {
+    "rootDir": "./src",
     "outDir": "./build",
-    "rootDir": "./",
     "declarationMap": false,
     "inlineSourceMap": true,
     "inlineSources": true,
     "alwaysStrict": true,
     "declaration": true,
     "experimentalDecorators": true,
-    "esModuleInterop": true,
-    "resolveJsonModule": true,
+    "incremental": false,
     "lib": [
-      "ES2021",
-      "DOM"
+      "es2020"
     ],
     "module": "CommonJS",
     "noEmitOnError": true,
@@ -22,16 +20,17 @@
     "noImplicitThis": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
     "stripInternal": false,
     "target": "ES2020",
-    "composite": false,
+    "composite": false
   },
   "include": [
-    "*/*.ts"
+    "**/*.ts"
   ],
   "exclude": [
     "node_modules",
