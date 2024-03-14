@@ -6,6 +6,9 @@
     "name": "Green Software Foundation",
     "email": "info@gsf.com"
   },
+  "bugs": {
+    "url": "https://github.com/Green-Software-Foundation/if-plugin-template/issues/new?assignees=&labels=feedback&projects=&template=feedback.md&title=Feedback+-+"
+  },
   "dependencies": {
     "typescript": "^5.1.6"
   },
@@ -25,8 +28,9 @@
   },
   "engines": {
     "node": ">=18",
-    "npm": "8.19.2"
+    "npm": ">=8"
   },
+  "homepage": "https://greensoftware.foundation",
   "keywords": [],
   "license": "MIT",
   "main": "build/index.js",
@@ -34,7 +38,8 @@
     "url": "https://github.com/Green-Software-Foundation/if-plugin-template.git"
   },
   "scripts": {
-    "build": "rm -rf build && tsc --project tsconfig.json",
+    "build": "npm run clean && tsc --project tsconfig.build.json",
+    "clean": "rimraf build/",
     "coverage": "jest --verbose --coverage",
     "fix": "gts fix",
     "fix:package": "fixpack",
