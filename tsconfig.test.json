@@ -30,12 +30,10 @@
     "composite": false
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.csv"
+    "**/*.ts"
   ],
   "exclude": [
     "node_modules",
-    ".types-compat",
-    "build"
+    ".types-compat"
   ],
 }
