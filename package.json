@@ -1,7 +1,7 @@
 {
   "name": "if-plugin-template",
   "description": "Impact Framework plugins template.",
-  "version": "v0.0.1",
+  "version": "v0.1.0",
   "author": {
     "name": "Green Software Foundation",
     "email": "info@gsf.com"
