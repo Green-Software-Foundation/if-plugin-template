@@ -1,6 +1,6 @@
 ---
 name: Feedback
-about: Submiting feedback on plugin template
+about: Submitting feedback on plugin template
 title: "Feedback - "
 labels: feedback
 assignees: ''
