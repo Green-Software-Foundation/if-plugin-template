@@ -1,9 +1,10 @@
 ---
 name: Feedback
 about: Submitting feedback on plugin template
-title: "Feedback - "
-labels: feedback
+title: 'Feedback - '
+labels: ''
 assignees: ''
+
 ---
 
 ## Scope
