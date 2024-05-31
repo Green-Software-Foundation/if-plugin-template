@@ -14,8 +14,8 @@ This is how you could run the model in Typescript:
 
 ```typescript
 async function runPlugin() {
-  const newModel = await new MyCustomPlugin().configure(params);
-  const usage = await newModel.calculate([
+  const newPlugin = await new MyCustomPlugin().configure(params);
+  const usage = await newPlugin.calculate([
     {
       timestamp: '2021-01-01T00:00:00Z',
       duration: '15s',
