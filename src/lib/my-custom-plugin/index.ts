@@ -1,4 +1,4 @@
-import {ERRORS} from '@grnsft/if-core';
+import {ERRORS} from '@grnsft/if-core/utils';
 import {PluginParams, ExecutePlugin} from '@grnsft/if-core/types';
 
 import {YourGlobalConfig} from './types';
