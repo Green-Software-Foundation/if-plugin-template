@@ -36,6 +36,8 @@ runPlugin();
 
 ## Testing model integration
 
+>Note: [If Core](https://github.com/Green-Software-Foundation/if-core) plugin has a set of error classes which should be used for having necessary integration with the IF framework. More information on error classes can be found at [Errors Reference](https://if.greensoftware.foundation/reference/errors/).
+
 ### Using local links
 
 For using locally developed model in `IF Framework` please follow these steps: 
