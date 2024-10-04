@@ -80,7 +80,7 @@ initialize:
     my-custom-plugin:
       method: MyCustomPlugin
       path: https://github.com/my-repo/my-plugin
-      global-config:
+      config:
         ...
 ...
 ```
