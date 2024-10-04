@@ -1,44 +1,25 @@
-import {ERRORS} from '@grnsft/if-core/utils';
-import {PluginParams, ExecutePlugin} from '@grnsft/if-core/types';
+import {PluginFactory} from '@grnsft/if-core/interfaces';
+import {PluginParams, ConfigParams} from '@grnsft/if-core/types';
 
-import {YourGlobalConfig} from './types';
+export const MyCustomPlugin = PluginFactory({
+  configValidation: (config: ConfigParams) => {
+    // do config validation here or just pass zod schema
 
-const {GlobalConfigError} = ERRORS;
+    return config;
+  },
+  inputValidation: (input: PluginParams) => {
+    // do input validation here or pass zod schema
 
-export const MyCustomPlugin = (
-  globalConfig: YourGlobalConfig
-): ExecutePlugin => {
-  const metadata = {
-    kind: 'execute',
-  };
-
-  /**
-   * Validates global config.
-   */
-  const validateGlobalConfig = () => {
-    if (!globalConfig) {
-      throw new GlobalConfigError('My custom message here.');
-    }
-
-    // validator checks can be applied if needed
-  };
-
-  /**
-   * Execute's strategy description here.
-   */
-  const execute = async (inputs: PluginParams[]): Promise<PluginParams[]> => {
-    validateGlobalConfig();
+    return input;
+  },
+  implementation: async (inputs: PluginParams[], config: ConfigParams) => {
+    const {yourValue} = config;
 
     return inputs.map(input => {
       // your logic here
-      globalConfig;
+      yourValue;
 
       return input;
     });
-  };
-
-  return {
-    metadata,
-    execute,
-  };
-};
+  },
+});
