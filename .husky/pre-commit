@@ -1,6 +1,9 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
+# configure pre commit hook here
+# f.ex.
+
 npm run lint
-# npm test
+npm test
 npm run fix:package
