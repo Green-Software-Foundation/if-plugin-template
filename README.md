@@ -88,5 +88,5 @@ initialize:
 Now, when you run the `manifest` using the IF CLI, it will load the plugin automatically. Run using:
 
 ```sh
-if --m <path-to-your-manifest> -o <path-to-save-output>
+if -m <path-to-your-manifest> -o <path-to-save-output>
 ```
