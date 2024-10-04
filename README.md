@@ -35,7 +35,7 @@ runPlugin();
 
 ## Testing plugin integration
 
->Note: [If Core](https://github.com/Green-Software-Foundation/if-core) plugin has a set of error classes which should be used for having necessary integration with the IF framework. More information on error classes can be found at [Errors Reference](https://if.greensoftware.foundation/reference/errors/).
+>Note: The [If Core](https://github.com/Green-Software-Foundation/if-core) repository contains the `PluginFactory` interface, utility functions, and a set of error classes that can be fully integrated with the IF framework. Detailed information on each error class can be found in the [Errors Reference](../reference/errors.md).
 
 ### Using local links
 
